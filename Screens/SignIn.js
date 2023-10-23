@@ -4,6 +4,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { handleSignIn } from "../Firebase"
 import { Dimensions, Platform, PixelRatio } from 'react-native';
 
+
 const {
   width: SCREEN_WIDTH,
   height: SCREEN_HEIGHT,
@@ -98,6 +99,33 @@ const SignIn = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <Text
+      adjustsFontSizeToFit
+      style={{
+        fontSize: normalize(16),
+        fontFamily: "Times New Roman",
+        color: "#fff",
+      }}>
+        To Use Test Account
+      </Text>
+      <Text
+      adjustsFontSizeToFit
+      style={{
+        fontSize: normalize(16),
+        fontFamily: "Times New Roman",
+        color: "#fff",
+      }}>
+        Email: test@test.com
+      </Text>
+      <Text
+      adjustsFontSizeToFit
+      style={{
+        fontSize: normalize(16),
+        fontFamily: "Times New Roman",
+        color: "#fff",
+      }}>
+        Password: tester1
+      </Text>
       <View style={styles.headerContainer}>
         <Text
           adjustsFontSizeToFit

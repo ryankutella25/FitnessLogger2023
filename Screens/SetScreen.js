@@ -347,7 +347,7 @@ export default function SetScreen({ route, navigation }) {
                     <Ionicons name="arrow-back-circle-outline" size={normalize(40)} color={COLORS.tertiary} />
                 </TouchableOpacity>
                 <View style={styles.imageHolder}>
-                    <Image style={styles.image} resizeMode='stretch' source={require('../components/benchCartoon.png')} />
+                    {/* <Image style={styles.image} resizeMode='stretch' source={require('../components/benchCartoon.png')} /> */}
                 </View>
                 <Text allowFontScaling={false} style={styles.Set}> Sets </Text>
                 <View

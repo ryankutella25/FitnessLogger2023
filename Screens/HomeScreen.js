@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Image, StyleSheet, Text, View, TextInput, Alert, Modal, ScrollView, TouchableOpacity } from 'react-native';
+import alert from '../components/alert'
 import { firestore, auth, handleSignout } from '../Firebase';
 import { getFirestore, deleteDoc, query, getDoc, where, getDocs, setDoc, doc, collection } from 'firebase/firestore';
 import { Dimensions, Platform, PixelRatio, InteractionManager, ActivityIndicator } from 'react-native';
@@ -394,7 +395,7 @@ export default function HomeScreen({ navigation }) {
 
 
   const showConfirmDialog = () => {
-   return Alert.alert(
+   return alert(
      "Are your sure?",
      "Are you sure you want to sign-out?",
      [
@@ -416,7 +417,7 @@ export default function HomeScreen({ navigation }) {
 
   //item is full item
   const confirmDeleteDay = (item) => {
-    return Alert.alert(
+    return alert(
       "Are your sure?",
       "Are you sure you want to delete "+item.shownName+"?",
       [
@@ -438,7 +439,7 @@ export default function HomeScreen({ navigation }) {
 
    //item is full item
   const confirmDeletePlan = (item) => {
-    return Alert.alert(
+    return alert(
       "Are your sure?",
       "Are you sure you want to delete "+item.shownName+"?",
       [
