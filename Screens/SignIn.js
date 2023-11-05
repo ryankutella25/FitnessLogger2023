@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Image, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { handleSignIn } from "../Firebase"
-import { Dimensions, Platform, PixelRatio } from 'react-native';
+import React, { useState } from "react";
+import { Dimensions, PixelRatio, Platform, Pressable, StyleSheet, Text, TextInput, View } from "react-native";
+import { handleSignIn } from "../Firebase";
 
 
 const {
@@ -99,6 +98,15 @@ const SignIn = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      <Text
+      adjustsFontSizeToFit
+      style={{
+        fontSize: normalize(16),
+        fontFamily: "Times New Roman",
+        color: "#fff",
+      }}>
+        This application uses React Native so it work on web, IOS, and android but for best user experience this app was made for mobile devices.
+      </Text>
       <Text
       adjustsFontSizeToFit
       style={{
